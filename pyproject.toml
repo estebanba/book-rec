@@ -17,4 +17,7 @@ dependencies = [
     "thefuzz>=0.22.1",
     "python-levenshtein>=0.27.1",
     "tqdm>=4.67.1",
+    "pymysql>=1.1.1",
+    "sqlalchemy>=2.0.38",
+    "dotenv>=0.9.9",
 ]
