@@ -85,25 +85,25 @@ CREATE TABLE `keyword`(
     `id` BIGINT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
     `keyword` VARCHAR(255) NOT NULL
 );
-ALTER TABLE
-    `record` ADD CONSTRAINT `record_total_cost_bins_foreign` FOREIGN KEY(`total_cost_bins`) REFERENCES `total_cost_bins`(`id`);
-ALTER TABLE
-    `record` ADD CONSTRAINT `record_costs_foreign` FOREIGN KEY(`costs`) REFERENCES `costs`(`id`);
-ALTER TABLE
-    `record` ADD CONSTRAINT `record_property_foreign` FOREIGN KEY(`property`) REFERENCES `property`(`address`);
-ALTER TABLE
-    `record_keyword` ADD CONSTRAINT `record_keyword_keyword_id_foreign` FOREIGN KEY(`keyword_id`) REFERENCES `keyword`(`id`);
-ALTER TABLE
-    `record` ADD CONSTRAINT `record_firm_name_foreign` FOREIGN KEY(`firm_name`) REFERENCES `firm`(`id`);
-ALTER TABLE
-    `record` ADD CONSTRAINT `record_status_foreign` FOREIGN KEY(`status`) REFERENCES `status`(`id`);
-ALTER TABLE
-    `record` ADD CONSTRAINT `record_season_foreign` FOREIGN KEY(`season`) REFERENCES `season`(`id`);
-ALTER TABLE
-    `record` ADD CONSTRAINT `record_building_construction_type_foreign` FOREIGN KEY(`building_construction_type`) REFERENCES `building_construction_type`(`id`);
-ALTER TABLE
-    `record` ADD CONSTRAINT `record_building_use_foreign` FOREIGN KEY(`building_use`) REFERENCES `building_use`(`id`);
-ALTER TABLE
-    `record` ADD CONSTRAINT `record_current_property_use_foreign` FOREIGN KEY(`current_property_use`) REFERENCES `building_use`(`id`);
-ALTER TABLE
-    `record` ADD CONSTRAINT `record_keywords_foreign` FOREIGN KEY(`keywords`) REFERENCES `record_keyword`(`record_id`);
+-- ALTER TABLE
+--     `record` ADD CONSTRAINT `record_total_cost_bins_foreign` FOREIGN KEY(`total_cost_bins`) REFERENCES `total_cost_bins`(`id`);
+-- ALTER TABLE
+--     `record` ADD CONSTRAINT `record_costs_foreign` FOREIGN KEY(`costs`) REFERENCES `costs`(`id`);
+-- ALTER TABLE
+--     `record` ADD CONSTRAINT `record_property_foreign` FOREIGN KEY(`property`) REFERENCES `property`(`address`);
+-- ALTER TABLE
+--     `record_keyword` ADD CONSTRAINT `record_keyword_keyword_id_foreign` FOREIGN KEY(`keyword_id`) REFERENCES `keyword`(`id`);
+-- ALTER TABLE
+--     `record` ADD CONSTRAINT `record_firm_name_foreign` FOREIGN KEY(`firm_name`) REFERENCES `firm`(`id`);
+-- ALTER TABLE
+--     `record` ADD CONSTRAINT `record_status_foreign` FOREIGN KEY(`status`) REFERENCES `status`(`id`);
+-- ALTER TABLE
+--     `record` ADD CONSTRAINT `record_season_foreign` FOREIGN KEY(`season`) REFERENCES `season`(`id`);
+-- ALTER TABLE
+--     `record` ADD CONSTRAINT `record_building_construction_type_foreign` FOREIGN KEY(`building_construction_type`) REFERENCES `building_construction_type`(`id`);
+-- ALTER TABLE
+--     `record` ADD CONSTRAINT `record_building_use_foreign` FOREIGN KEY(`building_use`) REFERENCES `building_use`(`id`);
+-- ALTER TABLE
+--     `record` ADD CONSTRAINT `record_current_property_use_foreign` FOREIGN KEY(`current_property_use`) REFERENCES `building_use`(`id`);
+-- ALTER TABLE
+--     `record` ADD CONSTRAINT `record_keywords_foreign` FOREIGN KEY(`keywords`) REFERENCES `record_keyword`(`record_id`);
