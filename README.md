@@ -1,7 +1,5 @@
 # Building Permits X-Ray: Cambridge, MA
 
-![Building Permits Dashboard](images/dashboard_screenshot.png)
-
 ## Project Overview
 
 This data analytics project analyzes building permit data from the City of Cambridge's Open Data Program to understand how construction factors affect building permit amounts and costs. The analysis provides valuable insights for city authorities, real estate companies, construction firms, and related businesses.
@@ -127,4 +125,11 @@ uv pip install -r requirements.txt
   - cleaning_building_permits.ipynb
   - analysis_building_permits.ipynb
 
-4. [Click here to open the Tableau dashboards in the tableau directory for interactive exploration](https://public.tableau.com/app/profile/esteban.basili/viz/DA_final_project_17419449525070/Costs?publish=yes)
+4. [Click here to open the Google Slides presentation](https://docs.google.com/presentation/d/1wTccw5iP6oPWEOziKdGUsGUrO4FaPyae88Z2C_rAVT0/edit?usp=sharing)
+
+5. [Click here to open the Tableau dashboards in tableau public directory for interactive exploration](https://public.tableau.com/app/profile/esteban.basili/viz/DA_final_project_17419449525070/Costs?publish=yes)
+
+<div style="width:90%; margin: auto;">
+  <img src="images/dashboard_1.png" alt="drawing" width="600" />
+  <img src="images/dashboard_2.png" alt="drawing" width="600"/>
+</div>
