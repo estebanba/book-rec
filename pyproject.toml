@@ -1,9 +1,9 @@
 [project]
-name = "data-bootcamp-final-project"
+name = "book-rec"
 version = "0.1.0"
-description = "DAFT Jan 2025 Module 3 Final Project - End to End Data Analytics Project"
+description = "Add your description here"
 readme = "README.md"
-requires-python = ">=3.9"
+requires-python = ">=3.12"
 dependencies = [
     "numpy>=2.0.2",
     "pandas>=2.2.3",
@@ -21,4 +21,7 @@ dependencies = [
     "sqlalchemy>=2.0.38",
     "dotenv>=0.9.9",
     "cryptography>=44.0.2",
+    "scikit-learn>=1.6",
+    "plotly>=6.0.1",
+    "kneed>=0.8.5",
 ]
