@@ -1,0 +1,2 @@
+# Explicitly exclude the Apple-specific package
+thinc-apple-ops==0.0.0
