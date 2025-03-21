@@ -22,7 +22,7 @@ st.markdown(
     """
     <style>
         .stTabs [data-baseweb="tab-list"] {
-            justify-content: center;
+            justify-content: left;
         }
         .stMarkdown, .stPlotlyChart, .stDataFrame {
             text-align: center;
@@ -66,7 +66,7 @@ def recommend_similar_book(book_name, df):
 # -----------------------------------------------
 
 st.title("BookRec")
-st.subheader("The Book Recommendation System")
+# st.subheader("The Book Recommendation System")
 
 tab1, tab2, tab3 = st.tabs(["Recommend me a book", "How it works", "All our books"])
 
@@ -85,7 +85,7 @@ with tab1:
     "Select a book from the list to get similar titles",
     title_list,
     index=None,
-    placeholder="Select contact method...",
+    placeholder="Click here to see the books...",
     )
 
     # st.write(book_name)
@@ -126,5 +126,5 @@ with tab2:
     st.subheader(f"Knee method optimal clusters: {optimal_clusters}")
 
 with tab3:
-    st.subheader("All our books")
+    st.subheader(f"Our {df_books.shape[0]} books")
     st.dataframe(df_books, use_container_width=True)
