@@ -13,7 +13,9 @@ dependencies = [
     "ipykernel>=6.29.5",
     "scipy>=1.13.1",
     "statsmodels>=0.14.4",
-    "spacy[apple]>=3.8.4",
+    # Removed [apple] extra to fix dependency issues
+    "spacy>=3.8.4",
+    "thinc>=8.1.0,<8.2.0",  # Explicitly set thinc version
     "thefuzz>=0.22.1",
     "python-levenshtein>=0.27.1",
     "tqdm>=4.67.1",
