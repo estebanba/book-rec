@@ -1,0 +1,13 @@
+[server]
+enableCORS = false
+enableXsrfProtection = false
+
+[browser]
+gatherUsageStats = false
+
+[global]
+disableWatchdogWarning = true
+
+[runner]
+# This helps to avoid dependency issues
+magicEnabled = false
